@@ -1,14 +1,11 @@
-.horizontal {
-	height: 50px;
+.container {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	flex-wrap: wrap;
 }
 
-.vertical {
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
+.block {
+	height: 100px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	min-width: 100px;
 }

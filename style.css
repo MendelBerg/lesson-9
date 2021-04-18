@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -7,5 +11,5 @@
 	height: 100px;
 	flex-grow: 1;
 	flex-shrink: 1;
-	min-width: 100px;
+	min-width: 400px;
 }

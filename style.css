@@ -2,20 +2,15 @@
 	box-sizing: border-box;
 }
 
-header {
-	text-align: center;
+.container div:nth-child(1) {
+	display: none;
 }
 
-.articles-list {
-	display: flex;
-	flex-wrap: wrap;
+.container div:nth-child(2) {
+	visibility: hidden;
 }
 
-.article {
-	margin: 8px;
-	padding: 16px;
-	background-color: bisque;
-	flex-basis: 300px;
-	flex-grow: 1;
-	flex-shrink: 0;
+.container div:nth-child(3) {
+	visibility: visible;
 }
+

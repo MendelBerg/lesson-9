@@ -2,6 +2,11 @@ html {
 	font-family: 'Verdana';
 }
 
+header {
+	width: 50%;
+	margin: 0px auto;
+}
+
 h1 {
 	font-size: 74px;
 	text-align: center;
@@ -9,6 +14,7 @@ h1 {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	width: 50%;
+	margin: 0;
 }
 
 div {

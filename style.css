@@ -2,16 +2,16 @@
 	box-sizing: border-box;
 }
 
-.header-text {
-	margin: 0;
-	padding: 16px;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 96px;
-	background-image: linear-gradient(45deg, #ff0, #f00);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+.gallery {
+	display: flex;
+}
 
+.image {
+	width: 200px;
+	height: 200px;
+	margin: 16px;
+	border: 1px dotted grey;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }

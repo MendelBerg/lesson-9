@@ -1,20 +1,29 @@
-.row {
-	display: flex;
+.button {
+	margin: 64px;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	border-width: 0;
+	background-color: coral;
+	border-radius: 4px;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
 }
 
-.column {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex: 1;
+.button:hover{
+	color: darkcyan;
 }
 
-.small-bird {
-	width: 64px;
-	height: 64px;
+.icon {
+	width: 32px;
+	height: 32px;
+	fill: #fff;
+	vertical-align: middle;
 }
 
-.large-bird {
-	width: 320px;
-	height: 320px;
+.button:hover .icon {
+	fill: green;
 }

@@ -28,6 +28,10 @@ th {
 }
 
 tr {
+	line-height: 30px;
+}
+
+tfoot tr {
 	line-height: 35px;
 }
 

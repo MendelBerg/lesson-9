@@ -1,7 +1,24 @@
-.form-control {
-	margin: 32px;
+* {
+	box-sizing: border-box;
 }
 
-.form-input {
-	margin: 8px;
+table {
+	width: 500px;
+}
+
+table,
+td,
+th {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+td,
+th {
+	text-align: right;
+	padding: 4px;
+}
+
+th {
+	font-weight: bold;
 }

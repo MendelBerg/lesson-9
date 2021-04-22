@@ -2,126 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Forms</title>
+    <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <form class="form-control">
-      <div class="form-input">
-        <input name="primaryLanguage" type="text" value="HTML" disabled />
-      </div>
+    <table>
+      <caption>
+        Shopping list
+      </caption>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Amount</th>
+          <th>Price</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
 
-      <div class="form-input">
-        <input name="agree" type="checkbox" />
-      </div>
+      <tbody>
+        <tr>
+          <td>Milk</td>
+          <td>3</td>
+          <td>$2</td>
+          <td>$6</td>
+        </tr>
 
-      <div class="form-input">
-        <input name="like" type="checkbox" checked readonly />
-      </div>
+        <tr>
+          <td>Bread</td>
+          <td>4</td>
+          <td>$1</td>
+          <td>$4</td>
+        </tr>
 
-      <div class="form-input">
-        <input name="favouriteColor" type="color" value="#ff7f50" />
-      </div>
+        <tr>
+          <td>Meat</td>
+          <td>5</td>
+          <td>$10</td>
+          <td>$60</td>
+        </tr>
+      </tbody>
 
-      <div class="form-input">
-        <input name="birthDate" type="date" value="2021-01-02" />
-      </div>
-
-      <div class="form-input">
-        <input
-          name="birthTime"
-          type="datetime-local"
-          value="2024-10-04T13:02"
-        />
-      </div>
-
-      <div class="form-input">
-        <input
-          name="email"
-          type="email"
-          placeholder="example@domain.com"
-          required
-        />
-      </div>
-
-      <div class="form-input">
-        <input name="avatar" type="file" />
-      </div>
-
-      <div class="form-input">
-        <input name="startLearning" type="month" value="2020-01" />
-      </div>
-
-      <div class="form-input">
-        <input name="favouriteNumber" type="number" value="17" />
-      </div>
-
-      <div class="form-input">
-        <textarea
-          name="story"
-          placeholder="A long time ago..."
-          rows="5"
-          cols="30"
-        ></textarea>
-      </div>
-
-      <div class="form-input">
-        <input type="password" name="password" value="secret" />
-      </div>
-
-      <div class="languages form-input">
-        <input type="radio" name="language" value="html" />HTML
-        <input type="radio" name="language" value="css" checked />CSS
-        <input type="radio" name="language" value="javascript" />JavaScript
-      </div>
-
-      <div class="form-input">
-        <input type="range" name="learningProgress" value="30" />
-      </div>
-
-      <div class="form-input">
-        <select name="framework">
-          <option value="react">React</option>
-          <option value="jquery" selected>jQuery</option>
-          <option value="bootstrap">Bootstrap</option>
-        </select>
-      </div>
-
-      <div class="form-input">
-        <input
-          type="search"
-          name="search"
-          placeholder="Type first letters..."
-        />
-      </div>
-
-      <div class="form-input">
-        <input type="time" name="lunchEnd" value="14:01" />
-      </div>
-
-      <div class="form-input">
-        <input
-          type="url"
-          name="website"
-          placeholder="https://website.com"
-          required
-        />
-      </div>
-
-      <div class="form-input">
-        <input type="week" name="birthWeek" value="2021-W51" />
-      </div>
-
-      <div class="form-input">
-        <button type="submit">Save</button>
-      </div>
-    </form>
+      <tfoot>
+        <td colspan="3">Total</td>
+        <td>$60</td>
+      </tfoot>
+    </table>
   </body>
 </html>

@@ -2,41 +2,28 @@
 	box-sizing: border-box;
 }
 
-.button {
-	margin: 64px;
-	width: 200px;
-	height: 50px;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #fff;
-	border-width: 0;
-	background-color: coral;
-	border-radius: 4px;
-	font-family: 'Courier New', Courier, monospace;
-	cursor: pointer;
+body {
+	display: flex;
+	justify-content:space-around;
 }
 
-.button:hover{
-	color: darkcyan;
+
+.fa-battery-full {
+	font-size: 16px;
 }
 
-.icon {
-	width: 32px;
-	height: 32px;
-	fill: #fff;
-	vertical-align: middle;
+.fa-battery-three-quarters {
+	font-size: 32px;
 }
 
-.button:hover .icon {
-	fill: green;
+.fa-battery-half {
+	font-size: 64px;
 }
 
-.btn1 {
-	height: 51px;
-	padding-top: 6px;
+.fa-battery-quarter {
+	font-size: 128px;
 }
 
-.btn2 {
-	padding-top: 3px;
+.fa-battery-empty {
+	font-size: 256px;
 }

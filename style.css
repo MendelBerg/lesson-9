@@ -2,8 +2,16 @@
 	box-sizing: border-box;
 }
 
+div{
+	overflow-x: auto;
+}
+
 table {
 	width: 500px;
+}
+
+caption {
+	margin-bottom: 8px;
 }
 
 table,
@@ -17,8 +25,26 @@ td,
 th {
 	text-align: right;
 	padding: 4px;
+	line-height: 40px;
 }
 
 th {
+	font-weight: bold;
+}
+
+th {
+	background-color: aqua;
+}
+
+tbody > tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+tbody>tr:hover{
+	color: #fff;
+	background-color: #aaa;
+}
+
+tfoot {
 	font-weight: bold;
 }

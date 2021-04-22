@@ -11,6 +11,7 @@
 	border-radius: 4px;
 	font-family: 'Courier New', Courier, monospace;
 	cursor: pointer;
+	padding-top: 5px;
 }
 
 .button:hover{

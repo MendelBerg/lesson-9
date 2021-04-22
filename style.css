@@ -1,7 +1,7 @@
 .button {
 	margin: 64px;
 	width: 200px;
-	height: 48px;
+	height: 51px;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -11,7 +11,7 @@
 	border-radius: 4px;
 	font-family: 'Courier New', Courier, monospace;
 	cursor: pointer;
-	padding-top: 3px;
+	padding-top: 6px;
 }
 
 .button:hover{

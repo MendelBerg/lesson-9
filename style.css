@@ -25,6 +25,9 @@ td,
 th {
 	text-align: right;
 	padding: 4px;
+}
+
+tr {
 	line-height: 40px;
 }
 

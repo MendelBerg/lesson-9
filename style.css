@@ -27,8 +27,12 @@ th {
 	padding: 4px;
 }
 
-tr {
+thead tr {
 	line-height: 30px;
+}
+
+tbody tr {
+	line-height: 25px;
 }
 
 tfoot tr {

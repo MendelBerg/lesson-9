@@ -2,55 +2,57 @@
 	box-sizing: border-box;
 }
 
-body {
+.container {
 	height: 100vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.fancy-button {
-	width: 150px;
-	height: 50px;
-	border-radius: 4px;
-	border: none;
-	background-image: linear-gradient(45deg, yellow, red);
-
-	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #fff;
-
-	animation: jump .5s .4s, spin .5s, hide 1s 2s ease forwards;
-	animation-direction: ease-in-out;
+.spinner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
 }
 
-@keyframes jump {
-	0% {
-		transform: translate(0);
+.circle {
+	width: 50px;
+	height: 50px;
+	border: 4px solid lightgray;
+	border-top-color: black;
+	border-radius: 50%;
+	margin-bottom: 8px;
+	animation: spin 2s infinite linear;
+}
+
+.spinner-text {
+	font-family: monospace;
+	font-size: 16px;
+	text-transform: uppercase;
+	animation: blinking 2s infinite linear;
+}
+
+@keyframes blinking {
+	0%{
+		opacity: 0;
 	}
 	50% {
-		transform: translateY(-40px);
+		opacity: 1;
 	}
 	100% {
-		transform: translate(0);
+		opacity: 0;
 	}
 }
 
-@keyframes spin {
-	from {
+
+@keyframes spin{
+	from{
 		transform: rotate(0);
 	}
-	to {
+	to{
 		transform: rotate(360deg);
 	}
 }
 
-@keyframes hide {
-	from {
-		transform: translateX(0);
-	}
-	to {
-		transform: translateX(2000px);
-	}
-}
